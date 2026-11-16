@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 专栏 · 新 AI 时间线（2022–2026）</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f6f7f9;color:#1c1c1e;line-height:1.6}
+.wrap{max-width:860px;margin:0 auto;padding:36px 18px 60px}
+header{margin-bottom:24px}
+h1{font-size:28px;margin-bottom:6px}
+.sub{color:#666;font-size:15px}
+.stats{display:flex;gap:16px;flex-wrap:wrap;margin-top:14px;color:#555;font-size:14px}
+.stats b{color:#111}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0 8px;position:sticky;top:0;background:#f6f7f9;padding:10px 0;z-index:5}
+.fbtn{border:1px solid #d4d4d8;background:#fff;border-radius:999px;padding:6px 14px;font-size:14px;cursor:pointer}
+.fbtn.on{background:#111;color:#fff;border-color:#111}
+.pfbtn{border:1px solid #d4d4d8;background:#fff;border-radius:999px;padding:6px 14px;font-size:14px;cursor:pointer}
+.pfbtn.on{background:#2563eb;color:#fff;border-color:#2563eb}
+.year{font-size:22px;margin:28px 0 12px;border-bottom:2px solid #111;padding-bottom:6px}
+.ycount{font-size:14px;color:#888;font-weight:400}
+.tl{display:flex;flex-direction:column;gap:14px}
+.card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:18px 20px}
+.card.hide{display:none}
+.top{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:6px}
+.date{font-family:ui-monospace,Menlo,monospace;font-size:13px;color:#666;background:#f0f0f2;border-radius:6px;padding:2px 8px}
+.cat{font-size:12px;color:#555;background:#eef2ff;border-radius:999px;padding:2px 9px}
+.price{font-size:12px;border-radius:999px;padding:2px 9px}
+.price.free{background:#dcfce7;color:#166534}
+.price.freemium{background:#dbeafe;color:#1d4ed8}
+.price.paid{background:#fef3c7;color:#92400e}
+.price.dead{background:#e5e7eb;color:#6b7280}
+.card h3{font-size:19px}
+.card h3 a{color:#111;text-decoration:none}
+.card h3 a:hover{color:#2563eb;text-decoration:underline}
+.vendor{color:#888;font-size:13px;margin:2px 0 8px}
+.best{font-size:15px}
+.miles{color:#666;font-size:13px;margin-top:6px}
+.priced{font-size:14px;margin-top:8px;color:#333}
+.status{color:#b91c1c;font-size:13px;margin-top:6px}
+.note{color:#888;font-size:13px;margin-top:4px}
+footer{margin-top:40px;color:#888;font-size:13px;border-top:1px solid #e5e7eb;padding-top:16px}
+footer p{margin-bottom:6px}
+.empty{display:none;text-align:center;color:#888;padding:40px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1>AI 专栏 · 新 AI 时间线</h1>
+<p class="sub">从 2022 年 ChatGPT 到现在，值得知道的 AI 产品按发布时间倒序排列：每个都写清是什么、要不要充值、最适合干什么。</p>
+<div class="stats"><span>共 <b>38</b> 个产品</span><span><b>10</b> 个分类</span><span>更新于 <b>2026-11-16</b></span></div>
+</header>
+<div class="filters" id="catFilters"><button class="fbtn on" data-cat="全部">全部</button><button class="fbtn" data-cat="视频生成">视频生成</button><button class="fbtn" data-cat="编程助手">编程助手</button><button class="fbtn" data-cat="智能体">智能体</button><button class="fbtn" data-cat="图像生成">图像生成</button><button class="fbtn" data-cat="设计">设计</button><button class="fbtn" data-cat="聊天对话">聊天对话</button><button class="fbtn" data-cat="语音">语音</button><button class="fbtn" data-cat="办公效率">办公效率</button><button class="fbtn" data-cat="开源模型">开源模型</button><button class="fbtn" data-cat="搜索">搜索</button></div>
+<div class="filters" id="priceFilters" style="position:static;padding-top:0">
+<button class="pfbtn on" data-price="全部">全部价格</button>
+<button class="pfbtn" data-price="免费">免费</button>
+<button class="pfbtn" data-price="免费+订阅">免费+订阅</button>
+<button class="pfbtn" data-price="付费">付费</button>
+</div>
+<h2 class="year">2026 年 <span class="ycount">3 个</span></h2><div class="tl"><article class="card" data-cat="视频生成" data-price="免费+订阅">
+  <div class="top"><span class="date">2026-05</span><span class="cat">视频生成</span><span class="price freemium">免费+订阅</span></div>
+  <h3><a href="https://gemini.google.com" target="_blank" rel="noopener">Gemini Omni</a></h3>
+  <p class="vendor">Google DeepMind</p>
+  <p class="best">用对话直接生成、改视频，不用写分镜脚本</p>
+  <p class="miles">Omni Flash GA 2026-08</p>
+  <p class="priced">💰 随 Google AI 订阅，API 按量（单价待核验）</p>
+  
+</article><article class="card" data-cat="编程助手" data-price="免费+订阅">
+  <div class="top"><span class="date">2026-04</span><span class="cat">编程助手</span><span class="price freemium">免费+订阅</span></div>
+  <h3><a href="https://meta.ai" target="_blank" rel="noopener">Muse</a></h3>
+  <p class="vendor">Meta（Meta Superintelligence Labs）</p>
+  <p class="best">在终端里让 AI 直接写代码、跑测试、改 Bug</p>
+  <p class="miles">2026-04 Muse Spark 接替 Llama；Glimmer 开源 2026-08；Muse Code beta 2026-08；Wonder 2026-10；Ember 2026-11</p>
+  <p class="priced">💰 Muse Code Power $50/月起，API 按量计费</p>
+  <p class="note">注：专用官网待核验</p>
+</article><article class="card" data-cat="智能体" data-price="免费+订阅">
+  <div class="top"><span class="date">2026-01</span><span class="cat">智能体</span><span class="price freemium">免费+订阅</span></div>
+  <h3><a href="https://claude.com" target="_blank" rel="noopener">Claude Cowork</a></h3>
+  <p class="vendor">Anthropic</p>
+  <p class="best">不写代码也能让 AI 批量整理文件、做表格写报告</p>
+  <p class="miles">研究预览 2026-01-12；GA 2026-04；2026-09 并入 Claude 对话</p>
+  <p class="priced">💰 含在 Claude Pro $20/月起</p>
+  
+</article></div><h2 class="year">2025 年 <span class="ycount">5 个</span></h2><div class="tl"><article class="card" data-cat="编程助手" data-price="免费">
+  <div class="top"><span class="date">2025-11</span><span class="cat">编程助手</span><span class="price free">免费</span></div>
+  <h3><a href="https://antigravity.google" target="_blank" rel="noopener">Google Antigravity</a></h3>
+  <p class="vendor">Google</p>
+  <p class="best">同时指挥多个 AI 智能体写代码，自己当架构师</p>
+  <p class="miles">2.0 2026-05（独立桌面端）</p>
+  <p class="priced">💰 个人公开预览免费；用量走 Google AI 订阅</p>
+  <p class="note">注：官网地址待核验</p>
+</article><article class="card" data-cat="图像生成" data-price="免费+订阅">
+  <div class="top"><span class="date">2025-09</span><span class="cat">图像生成</span><span class="price freemium">免费+订阅</span></div>
+  <h3><a href="https://jimeng.jianying.com" target="_blank" rel="noopener">即梦AI / Seedream</a></h3>
+  <p class="vendor">字节跳动 Seed 团队</p>
+  <p class="best">做海报、电商图、产品图，中文排版准</p>
+  <p class="miles">Seedream 4.5 2025-12；5.0 Lite 2026-02；5.5 2026-11</p>
+  <p class="priced">💰 即梦 App 免费额度；API 约 ¥0.20/张</p>
+  
+</article><article class="card" data-cat="图像生成" data-price="免费">
+  <div class="top"><span class="date">2025-08</span><span class="cat">图像生成</span><span class="price free">免费</span></div>
+  <h3><a href="https://gemini.google.com" target="_blank" rel="noopener">Nano Banana</a></h3>
+  <p class="vendor">Google DeepMind</p>
+  <p class="best">一句话修图、换背景、保持人物一致</p>
+  <p class="miles">Pro 2025-11；Nano Banana 2 2026-02；2 Lite 2026-07</p>
+  <p class="priced">💰 Gemini App 内每日限额；API 约 $0.039/张</p>
+  
+</article><article class="card" data-cat="设计" data-price="免费">
+  <div class="top"><span class="date">2025-05</span><span class="cat">设计</span><span class="price free">免费</span></div>
+  <h3><a href="https://stitch.google.com" target="_blank" rel="noopener">Google Stitch</a></h3>
+  <p class="vendor">Google Labs</p>
+  <p class="best">一句话生成多屏 App 界面并导出 Figma/代码</p>
+  <p class="miles">2.0 2026-03（无限画布+设计智能体）</p>
+  <p class="priced">💰 实验产品，月度生成额度</p>
+  
+</article><article class="card" data-cat="智能体" data-price="免费+订阅">
+  <div class="top"><span class="date">2025-03</span><span class="cat">智能体</span><span class="price freemium">免费+订阅</span></div>
+  <h3><a href="https://manus.im" target="_blank" rel="noopener">Manus</a></h3>
+  <p class="vendor">Butterfly Effect（Monica 团队）</p>
+  <p class="best">交代一句话，让它联网调研、做表做 PPT 全套交付</p>
+  <p class="miles">公开注册 2025-05；Manus 2.0 2026-09；Meta 2025-12 宣布收购</p>
+  <p class="priced">💰 Pro $20/月起（积分制）；高档定价以官网为准</p>
+  
+</article></div><h2 class="year">2024 年 <span class="ycount">8 个</span></h2><div class="tl"><article class="card" data-cat="编程助手" data-price="免费+订阅">
+  <div class="top"><span class="date">2024-11</span><span class="cat">编程助手</span><span class="price freemium">免费+订阅</span></div>
+  <h3><a href="https://lovable.dev" target="_blank" rel="noopener">Lovable</a></h3>
+  <p class="vendor">Lovable（前身 GPT Engineer）</p>
+  <p class="best">不会写代码也能一句话做出网站和 App</p>
+  
+  <p class="priced">💰 $20/月起</p>
+  
+</article><article class="card" data-cat="编程助手" data-price="免费+订阅">
+  <div class="top"><span class="date">2024-10</span><span class="cat">编程助手</span><span class="price freemium">免费+订阅</span></div>
+  <h3><a href="https://bolt.new" target="_blank" rel="noopener">Bolt.new</a></h3>
+  <p class="vendor">StackBlitz</p>
+  <p class="best">在浏览器里直接做出能跑的全栈网站</p>
+  
+  <p class="priced">💰 Pro $25/月（待核验）</p>
+  
+</article><article class="card" data-cat="智能体" data-price="免费+订阅">
+  <div class="top"><span class="date">2024-06</span><span class="cat">智能体</span><span class="price freemium">免费+订阅</span></div>
+  <h3><a href="https://www.genspark.ai" target="_blank" rel="noopener">Genspark</a></h3>
+  <p class="vendor">MainFunc</p>
+  <p class="best">让 AI 搜索+整理+出 PPT/表格的一站式调研</p>
+  <p class="miles">Super Agent 2025-04</p>
+  <p class="priced">💰 免费；Plus $24.99/月（年付 $19.99/月），Pro $249.99/月</p>
+  
+</article><article class="card" data-cat="设计" data-price="免费+订阅">
+  <div class="top"><span class="date">2024-06</span><span class="cat">设计</span><span class="price freemium">免费+订阅</span></div>
+  <h3><a href="https://www.figma.com" target="_blank" rel="noopener">Figma AI</a></h3>
+  <p class="vendor">Figma</p>
+  <p class="best">在设计稿里一键生成界面、改图、重命名图层</p>
+  <p class="miles">Figma Make GA 2025-07；设计智能体 2026-05</p>
+  <p class="priced">💰 随 Figma 套餐，AI 按积分计费（套餐价待核验）</p>
+  
+</article><article class="card" data-cat="聊天对话" data-price="免费">
+  <div class="top"><span class="date">2024-05</span><span class="cat">聊天对话</span><span class="price free">免费</span></div>
+  <h3><a href="https://www.deepseek.com" target="_blank" rel="noopener">DeepSeek</a></h3>
+  <p class="vendor">深度求索</p>
+  <p class="best">免费的深度思考+联网问答，性价比最高的国产对话 AI</p>
+  <p class="miles">V3 2024-12；R1 2025-01（开源推理）；V3.1 2025-08；V3.2 2025-12；V4 预览 2026-04</p>
+  <p class="priced">💰 App/网页免费；API 按量计费</p>
+  
+</article><article class="card" data-cat="视频生成" data-price="免费+订阅">
+  <div class="top"><span class="date">2024-05</span><span class="cat">视频生成</span><span class="price freemium">免费+订阅</span></div>
+  <h3><a href="https://deepmind.google/models/veo/" target="_blank" rel="noopener">Veo</a></h3>
+  <p class="vendor">Google DeepMind</p>
+  <p class="best">生成带对白、音效和配乐的短视频</p>
+  <p class="miles">Veo 2 2024-12；Veo 3 2025-05（原生音频）；Veo 3.1 2025-10</p>
+  <p class="priced">💰 含在 Google AI Pro $19.99/月；API 按量（单价待核验）</p>
+  
+</article><article class="card" data-cat="聊天对话" data-price="免费">
+  <div class="top"><span class="date">2024-05</span><span class="cat">聊天对话</span><span class="price free">免费</span></div>
+  <h3><a href="https://yuanbao.tencent.com" target="_blank" rel="noopener">腾讯元宝</a></h3>
+  <p class="vendor">腾讯（混元）</p>
+  <p class="best">微信生态里顺手用的免费 AI 助手，支持长文处理</p>
+  <p class="miles">接入 DeepSeek-R1 2025-02；混元 Hy4 2026-11</p>
+  <p class="priced">💰 免费</p>
+  
+</article><article class="card" data-cat="视频生成" data-price="已停服">
+  <div class="top"><span class="date">2024-02</span><span class="cat">视频生成</span><span class="price dead">已停服</span></div>
+  <h3><a href="https://sora.com" target="_blank" rel="noopener">Sora</a></h3>
+  <p class="vendor">OpenAI</p>
+  <p class="best">曾是最出圈的文生视频，凭一句话生成电影感短片</p>
+  <p class="miles">公开 2024-12；Sora 2 2025-09</p>
+  <p class="priced">💰 曾含在 ChatGPT Plus $20/月</p>
+  <p class="status">⚠ 已停服：网页/App 2026-04 下线，API 2026-09 下线</p>
+</article></div><h2 class="year">2023 年 <span class="ycount">15 个</span></h2><div class="tl"><article class="card" data-cat="聊天对话" data-price="免费+订阅">
+  <div class="top"><span class="date">2023-12</span><span class="cat">聊天对话</span><span class="price freemium">免费+订阅</span></div>
+  <h3><a href="https://gemini.google.com" target="_blank" rel="noopener">Gemini</a></h3>
+  <p class="vendor">Google</p>
+  <p class="best">谷歌全家桶用户首选，搜索、邮箱、文档联动最顺</p>
+  <p class="miles">前身 Bard 2023-03；Gemini Advanced 2024-02；Gemini 3 2025-11；Gemini 4 Argon GA 2026-10</p>
+  <p class="priced">💰 免费；AI Pro $19.99/月，Ultra 高档（价格待核验）</p>
+  
+</article><article class="card" data-cat="语音" data-price="免费+订阅">
+  <div class="top"><span class="date">2023-12</span><span class="cat">语音</span><span class="price freemium">免费+订阅</span></div>
+  <h3><a href="https://suno.com" target="_blank" rel="noopener">Suno</a></h3>
+  <p class="vendor">Suno</p>
+  <p class="best">一句话生成带歌词的完整歌曲</p>
+  <p class="miles">v3 2024-03</p>
+  <p class="priced">💰 Pro $10/月，Premier $30/月（待核验）</p>
+  
+</article><article class="card" data-cat="聊天对话" data-price="免费+订阅">
+  <div class="top"><span class="date">2023-11</span><span class="cat">聊天对话</span><span class="price freemium">免费+订阅</span></div>
+  <h3><a href="https://grok.com" target="_blank" rel="noopener">Grok</a></h3>
+  <p class="vendor">xAI</p>
+  <p class="best">X（推特）用户顺手问实时热点和梗图</p>
+  <p class="miles">Grok-1 权重开源 2024-03</p>
+  <p class="priced">💰 免费；SuperGrok 价格待核验</p>
+  
+</article><article class="card" data-cat="聊天对话" data-price="免费+订阅">
+  <div class="top"><span class="date">2023-10</span><span class="cat">聊天对话</span><span class="price freemium">免费+订阅</span></div>
+  <h3><a href="https://www.kimi.com" target="_blank" rel="noopener">Kimi</a></h3>
+  <p class="vendor">月之暗面 Moonshot AI</p>
+  <p class="best">读超长文档、做 PPT/网站/深度研究的国产全能助手</p>
+  <p class="miles">200万字上下文 2024-03；K2 2025-07（开源）；K3 2026-07；K3.1 Pro 2026-10</p>
+  <p class="priced">💰 免费；会员 Go ¥49/月起（Plus ¥99、Pro ¥199、Max ¥699、Ultra ¥1,399）</p>
+  
+</article><article class="card" data-cat="编程助手" data-price="免费+订阅">
+  <div class="top"><span class="date">2023-10</span><span class="cat">编程助手</span><span class="price freemium">免费+订阅</span></div>
+  <h3><a href="https://v0.app" target="_blank" rel="noopener">v0</a></h3>
+  <p class="vendor">Vercel</p>
+  <p class="best">用文字描述直接生成可部署的前端界面</p>
+  
+  <p class="priced">💰 免费（每月 $5 额度起）；付费订阅价格待核验</p>
+  
+</article><article class="card" data-cat="图像生成" data-price="免费+订阅">
+  <div class="top"><span class="date">2023-10</span><span class="cat">图像生成</span><span class="price freemium">免费+订阅</span></div>
+  <h3><a href="https://openai.com" target="_blank" rel="noopener">DALL·E</a></h3>
+  <p class="vendor">OpenAI</p>
+  <p class="best">在 ChatGPT 里直接配图，提示词还原度高</p>
+  <p class="miles">表中日期为 DALL·E 3；2025-03 起 ChatGPT 内由 GPT Image 接替</p>
+  <p class="priced">💰 含在 ChatGPT Plus $20/月；API 已于 2026-05 下线</p>
+  
+</article><article class="card" data-cat="聊天对话" data-price="免费+订阅">
+  <div class="top"><span class="date">2023-08</span><span class="cat">聊天对话</span><span class="price freemium">免费+订阅</span></div>
+  <h3><a href="https://www.doubao.com" target="_blank" rel="noopener">豆包</a></h3>
+  <p class="vendor">字节跳动</p>
+  <p class="best">国内日活最高的免费 AI 助手，聊天、写文、做图都行</p>
+  <p class="miles">付费订阅 2026-06 上线</p>
+  <p class="priced">💰 免费；2026-06 起有付费订阅（三档价格待核验）</p>
+  
+</article><article class="card" data-cat="办公效率" data-price="免费+订阅">
+  <div class="top"><span class="date">2023-07</span><span class="cat">办公效率</span><span class="price freemium">免费+订阅</span></div>
+  <h3><a href="https://notebooklm.google.com" target="_blank" rel="noopener">NotebookLM</a></h3>
+  <p class="vendor">Google</p>
+  <p class="best">把论文、课件、会议记录变成可问答的知识库和播客</p>
+  <p class="miles">2026-07 更名为 Gemini Notebook</p>
+  <p class="priced">💰 免费；Plus 含在 Google AI Pro $19.99/月</p>
+  
+</article><article class="card" data-cat="聊天对话" data-price="免费">
+  <div class="top"><span class="date">2023-04</span><span class="cat">聊天对话</span><span class="price free">免费</span></div>
+  <h3><a href="https://www.qwen.ai" target="_blank" rel="noopener">通义千问 Qwen</a></h3>
+  <p class="vendor">阿里巴巴通义实验室</p>
+  <p class="best">国产开源大模型首选，手机 App 和开源部署都方便</p>
+  <p class="miles">开源 2023-08；公众开放 2023-09；Qwen3 2025-04；Qwen3.5 2026-02</p>
+  <p class="priced">💰 App/网页免费；API 按量计费</p>
+  
+</article><article class="card" data-cat="聊天对话" data-price="免费+订阅">
+  <div class="top"><span class="date">2023-03</span><span class="cat">聊天对话</span><span class="price freemium">免费+订阅</span></div>
+  <h3><a href="https://claude.com" target="_blank" rel="noopener">Claude</a></h3>
+  <p class="vendor">Anthropic</p>
+  <p class="best">写长文、改代码、处理大文档最稳的对话 AI</p>
+  <p class="miles">Claude 3 2024-03；Claude Code 2025-02/05；Opus 4/Sonnet 4 2025-05；Sonnet 4.5 2025-09；Opus 4.5 2025-11；Opus 5.5/Sonnet 5.5 2026-09；Fable 5.2 2026-11</p>
+  <p class="priced">💰 免费；Pro $20/月（年付 $17/月），Max $100/$200/月</p>
+  
+</article><article class="card" data-cat="聊天对话" data-price="免费">
+  <div class="top"><span class="date">2023-03</span><span class="cat">聊天对话</span><span class="price free">免费</span></div>
+  <h3><a href="https://www.chatglm.cn" target="_blank" rel="noopener">智谱 GLM</a></h3>
+  <p class="vendor">智谱 AI（Z.ai）</p>
+  <p class="best">国产开源大模型老牌，写代码和做智能体性价比高</p>
+  <p class="miles">ChatGLM-6B 开源 2023-03；GLM-4 2024-01；GLM-4.5 2025-07；GLM-4.6 2025-09（开源 MIT）；GLM-5 2026-02；GLM-5.2 2026-06</p>
+  <p class="priced">💰 智谱清言 App 免费；API 按量（GLM-4.6 约 $0.60/$2.20 每百万 tokens）</p>
+  
+</article><article class="card" data-cat="聊天对话" data-price="免费+订阅">
+  <div class="top"><span class="date">2023-03</span><span class="cat">聊天对话</span><span class="price freemium">免费+订阅</span></div>
+  <h3><a href="https://yiyan.baidu.com" target="_blank" rel="noopener">文心一言（现名文小言）</a></h3>
+  <p class="vendor">百度</p>
+  <p class="best">百度搜索、文库、网盘用户顺手用的国产助手</p>
+  <p class="miles">全面开放 2023-08；移动端更名文小言 2024-09；ERNIE 5.x 2026 年陆续上线</p>
+  <p class="priced">💰 免费；Plus 会员 ¥49.9/月起（连续包月；单月 ¥59.9）</p>
+  
+</article><article class="card" data-cat="编程助手" data-price="免费+订阅">
+  <div class="top"><span class="date">2023-03</span><span class="cat">编程助手</span><span class="price freemium">免费+订阅</span></div>
+  <h3><a href="https://www.cursor.com" target="_blank" rel="noopener">Cursor</a></h3>
+  <p class="vendor">Anysphere</p>
+  <p class="best">程序员日常写代码的 AI 编辑器，补全和改代码最顺手</p>
+  
+  <p class="priced">💰 Pro $20/月</p>
+  
+</article><article class="card" data-cat="视频生成" data-price="免费+订阅">
+  <div class="top"><span class="date">2023-02</span><span class="cat">视频生成</span><span class="price freemium">免费+订阅</span></div>
+  <h3><a href="https://runwayml.com" target="_blank" rel="noopener">Runway</a></h3>
+  <p class="vendor">Runway</p>
+  <p class="best">做短视频、广告片和影视级特效的 AI 视频工具</p>
+  <p class="miles">Gen-2 2023-06；现行 Gen-4.5</p>
+  <p class="priced">💰 Standard $14.99/月，Pro $35/月，Max $95/月</p>
+  
+</article><article class="card" data-cat="开源模型" data-price="免费">
+  <div class="top"><span class="date">2023-02</span><span class="cat">开源模型</span><span class="price free">免费</span></div>
+  <h3><a href="https://www.llama.com" target="_blank" rel="noopener">Llama</a></h3>
+  <p class="vendor">Meta</p>
+  <p class="best">自己搭本地 AI、做二次开发的开源底座</p>
+  <p class="miles">Llama 2 2023-07；Llama 4 2025-04</p>
+  <p class="priced">💰 开源权重免费</p>
+  <p class="status">⚠ 后续无新版：Meta 2026-04 起以 Muse 系列接替 Llama</p>
+</article></div><h2 class="year">2022 年 <span class="ycount">7 个</span></h2><div class="tl"><article class="card" data-cat="搜索" data-price="免费+订阅">
+  <div class="top"><span class="date">2022-12</span><span class="cat">搜索</span><span class="price freemium">免费+订阅</span></div>
+  <h3><a href="https://www.perplexity.ai" target="_blank" rel="noopener">Perplexity</a></h3>
+  <p class="vendor">Perplexity AI</p>
+  <p class="best">带出处的研究型搜索，写报告查资料先问它</p>
+  
+  <p class="priced">💰 免费；Pro $20/月，Max $200/月</p>
+  
+</article><article class="card" data-cat="聊天对话" data-price="免费+订阅">
+  <div class="top"><span class="date">2022-11</span><span class="cat">聊天对话</span><span class="price freemium">免费+订阅</span></div>
+  <h3><a href="https://chatgpt.com" target="_blank" rel="noopener">ChatGPT</a></h3>
+  <p class="vendor">OpenAI</p>
+  <p class="best">通用 AI 助手天花板，聊天、写作、编程、搜资料一把抓</p>
+  <p class="miles">GPT-4 2023-03；GPT-4o 2024-05；GPT-5 2025-08；GPT-5.6 2026-07；GPT-6 Astra 2026-09</p>
+  <p class="priced">💰 免费；Go $8/月（待核验），Plus $20/月，Pro $200/月</p>
+  
+</article><article class="card" data-cat="办公效率" data-price="免费+订阅">
+  <div class="top"><span class="date">2022-11</span><span class="cat">办公效率</span><span class="price freemium">免费+订阅</span></div>
+  <h3><a href="https://www.notion.com" target="_blank" rel="noopener">Notion AI</a></h3>
+  <p class="vendor">Notion</p>
+  <p class="best">在笔记里直接续写、总结、生成表格</p>
+  <p class="miles">alpha 2022-11；全员可用 2023-02</p>
+  <p class="priced">💰 随 Notion Business 等套餐（AI 自 Business 起完整；套餐价待核验）</p>
+  
+</article><article class="card" data-cat="开源模型" data-price="免费">
+  <div class="top"><span class="date">2022-08</span><span class="cat">开源模型</span><span class="price free">免费</span></div>
+  <h3><a href="https://stability.ai" target="_blank" rel="noopener">Stable Diffusion</a></h3>
+  <p class="vendor">Stability AI 等</p>
+  <p class="best">本地跑图、可控性最强的开源生图底座</p>
+  <p class="miles">v1.4 权重公开 2022-08</p>
+  <p class="priced">💰 开源权重免费</p>
+  
+</article><article class="card" data-cat="办公效率" data-price="免费+订阅">
+  <div class="top"><span class="date">2022-08</span><span class="cat">办公效率</span><span class="price freemium">免费+订阅</span></div>
+  <h3><a href="https://gamma.app" target="_blank" rel="noopener">Gamma</a></h3>
+  <p class="vendor">Gamma</p>
+  <p class="best">一句话生成能直接讲的 PPT、文档和网页</p>
+  <p class="miles">AI 生成能力 2023-03</p>
+  <p class="priced">💰 Plus $12/月起（Pro $25，Ultra $100）</p>
+  
+</article><article class="card" data-cat="图像生成" data-price="付费">
+  <div class="top"><span class="date">2022-07</span><span class="cat">图像生成</span><span class="price paid">付费</span></div>
+  <h3><a href="https://www.midjourney.com" target="_blank" rel="noopener">Midjourney</a></h3>
+  <p class="vendor">Midjourney</p>
+  <p class="best">出图审美天花板，插画、壁纸、概念设计首选</p>
+  
+  <p class="priced">💰 Basic $10/月起（Standard $30，Pro $60，Mega $120），无免费档</p>
+  
+</article><article class="card" data-cat="编程助手" data-price="免费+订阅">
+  <div class="top"><span class="date">2022-06</span><span class="cat">编程助手</span><span class="price freemium">免费+订阅</span></div>
+  <h3><a href="https://github.com/copilot" target="_blank" rel="noopener">Copilot</a></h3>
+  <p class="vendor">微软/GitHub</p>
+  <p class="best">写代码补全和 Office 办公的 AI 搭档</p>
+  <p class="miles">技术预览 2021-06；M365 Copilot 企业版 2023-11；Fusion 2026-10</p>
+  <p class="priced">💰 GitHub Copilot 个人 $10/月；Microsoft 365 Copilot $30/人/月</p>
+  
+</article></div>
+<p class="empty" id="empty">没有符合筛选的产品，换个分类试试。</p>
+<footer>
+<p>口径：日期为产品首次公开上线的月份；定价为 2026-11 核查时的公开价，订阅价常变，以官网为准。标“待核验”的价格或地址未完全核实，请以官网为准。</p>
+<p>海外产品在中国大陆多需自行解决网络访问，国内产品可直接用。2026 年是“大版本年”：全新独立产品线只有 Muse、Gemini Omni、Claude Cowork 三条，其余多为既有产品的大版本升级。</p>
+<p>数据来源：各产品官网与公开报道整理；发现错误或有新 AI 想补上，欢迎提 issue。</p>
+</footer>
+</div>
+<script>
+let cat="全部", price="全部";
+function apply(){
+  let n=0;
+  document.querySelectorAll(".card").forEach(c=>{
+    const ok=(cat==="全部"||c.dataset.cat===cat)&&(price==="全部"||c.dataset.price===price);
+    c.classList.toggle("hide",!ok); if(ok)n++;
+  });
+  document.querySelectorAll(".year").forEach(y=>{
+    const next=y.nextElementSibling;
+    const vis=[...next.querySelectorAll(".card")].some(c=>!c.classList.contains("hide"));
+    y.style.display=vis?"":"none"; next.style.display=vis?"":"none";
+  });
+  document.getElementById("empty").style.display=n?"none":"block";
+}
+document.getElementById("catFilters").addEventListener("click",e=>{
+  if(e.target.tagName!=="BUTTON")return;
+  document.querySelectorAll("#catFilters .fbtn").forEach(b=>b.classList.remove("on"));
+  e.target.classList.add("on"); cat=e.target.dataset.cat; apply();
+});
+document.getElementById("priceFilters").addEventListener("click",e=>{
+  if(e.target.tagName!=="BUTTON")return;
+  document.querySelectorAll("#priceFilters .pfbtn").forEach(b=>b.classList.remove("on"));
+  e.target.classList.add("on"); price=e.target.dataset.price; apply();
+});
+</script>
+</body>
+</html>
